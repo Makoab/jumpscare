@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learn Academy</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width">
+		<script>
+		function jumpScare() {
+			var audio = document.getElementById("audio");
+			audio.muted = false; // Ensure audio is unmuted
+			audio.play(); // Play the scream sound
+			document.getElementById("scareImage").style.display = "block"; // Show the scare image
+		}
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<h1>Learn Academy</h1>
+			<p>Free courses will be given! Click the button below to claim.</p>
+			<div id="click">
+				<input type="button" value="Click Here" onclick="jumpScare();">
+			</div>
+		</div>
+		<div id="scareImage" style="display: none;">
+			<img src="scare.jpg" alt="Scare Image">
+		</div>
+		<audio id="audio" src="scream2.mp3" muted></audio> <!-- Start muted -->
+	</body>
+</html>

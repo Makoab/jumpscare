@@ -1,0 +1,54 @@
+body {
+	background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb); /* Vibrant gradient background */
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1 {
+	color: #3f8277;
+	text-shadow: 2px 2px 5px #2e5d54;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+p {
+	color: #555;
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+#click input {
+	padding: 20px 40px;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	background-color: #3f8277;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+#click input:hover {
+	background-color: #2e5d54;
+}
+
+#scareImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: black;
+}
+
+#scareImage img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
